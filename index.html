@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Internship Registration Form</title>
+  <!--CSS Part-->
+  <style>
+    body {
+      font-family: serif;
+      background: gray;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;                
+    }
+
+    form {
+      background: white;      
+      padding: 25px;          
+      border-radius: 10px;    
+      width: 300px; 
+    }
+
+    label {
+      display: block;
+      margin-top: 10px;
+    }
+
+    input, select {
+      width: 100%;                 
+      padding: 5px;   
+      margin-top: 8px;    
+    }
+
+    .gender {
+      display: flex;                /* side-by-side */
+      gap: 5px;                   
+    }
+
+    button {
+      margin-top: 10px;
+      width: 100%;                  
+      padding: 8px;             
+      background: #1796eb;        
+      color: white;               
+      border: none;                 
+      border-radius: 5px;         
+    }
+  </style>
+</head>
+<body>
+  <form>
+    <h2>Registration Form</h2>
+    <label>Full Name</label>
+    <input type="text" required>   
+    <label>Email</label>
+    <input type="email" required>  
+    <label>Phone</label>
+    <input type="number" required>
+    
+    <label>Gender</label>
+    <div class="gender">
+      <label><input type="radio" name="gender"> Male</label>
+      <label><input type="radio" name="gender"> Female</label>
+      <label><input type="radio" name="gender"> Other</label>
+    </div>
+
+    <!-- Dropdown -->
+    <label>Preferred Domain</label>
+    <select required>
+      <option disabled selected>Select Domain</option>
+      <option>Web Development</option>
+      <option>Data Science</option>
+      <option>UI/UX Design</option>
+      <option>Cybersecurity</option>
+    </select>
+
+    <!-- upload -->
+    <label>Resume</label>
+    <input type="file" required>
+
+    <!-- Submit button -->
+    <button type="submit">Submit</button>
+  </form>
+</body>
+</html>
